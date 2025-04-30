@@ -1,6 +1,6 @@
-# 🚗 ParkWiser – Smart Parking Management System
+# 🚗 ParkWise – Smart Parking Management System
 
-ParkWiser is a smart, responsive parking management system designed to simplify urban parking by enabling users to reserve, locate, and manage parking spots in real-time. It features a sleek, intuitive UI/UX and is built for both users and administrators with accessibility and efficiency in mind.
+ParkWise is a smart, responsive parking management system designed to simplify urban parking by enabling users to reserve, locate, and manage parking spots in real-time. It features a sleek, intuitive UI/UX and is built for both users and administrators with accessibility and efficiency in mind.
 
 ---
 
@@ -39,9 +39,9 @@ ParkWiser is a smart, responsive parking management system designed to simplify 
 
 ## 🚀 Tech Stack
 
-- **Frontend**: HTML, CSS, JavaScript, React (if applicable)
-- **Backend**: Node.js / Express
-- **Database**: MongoDB / MySQL
+- **Frontend**: HTML, CSS, JavaScript, React 
+- **Backend**: Node.js 
+- **Database**: MongoDB 
 - **Tools**: Git, VS Code, GitHub
 
 ---
@@ -50,8 +50,8 @@ ParkWiser is a smart, responsive parking management system designed to simplify 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/ABThakur123/ParkWiser.git
-   cd ParkWiser
+   git clone https://github.com/ABThakur123/ParkWise.git
+   cd ParkWise
 2. Install Dependencies:
    ```bash
    npm install
