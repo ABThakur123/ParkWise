@@ -34,7 +34,6 @@ ParkWiser is a smart, responsive parking management system designed to simplify 
 ### 📋 3. Booking Confirmation
 ![Booking](https://via.placeholder.com/800x400?text=Booking+Confirmation+Screen)
 
-*(Replace these placeholders with real screenshots once the app is running.)*
 
 ---
 
