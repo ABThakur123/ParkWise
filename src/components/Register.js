@@ -33,22 +33,28 @@ const Register = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-600 to-blue-400 px-4">
-      <div className="max-w-md w-full bg-white p-10 rounded-3xl shadow-xl">
-        <h2 className="text-3xl font-extrabold mb-8 text-center text-blue-700 font-sans tracking-wide">
+    <div
+      className="min-h-screen flex items-center justify-center bg-cover bg-center px-4"
+      style={{
+        backgroundImage:
+          "url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1470&q=80')",
+      }}
+    >
+      <div className="max-w-md w-full bg-white bg-opacity-80 p-10 rounded-3xl shadow-xl backdrop-blur-sm">
+        <h2 className="text-3xl font-extrabold mb-8 text-center text-blue-900 font-sans tracking-wide">
           Register for ParkWise
         </h2>
         {error && <p className="text-red-600 mb-6 text-center font-semibold">{error}</p>}
         {success && <p className="text-green-600 mb-6 text-center font-semibold">{success}</p>}
         <form onSubmit={handleSubmit} className="space-y-6" noValidate>
           <div>
-            <label htmlFor="username" className="block mb-2 font-semibold text-gray-700">
+            <label htmlFor="username" className="block mb-2 font-semibold text-gray-900">
               Username
             </label>
             <input
               type="text"
               id="username"
-              className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-4 focus:ring-blue-300 transition"
+              className="w-full border border-gray-400 rounded-lg px-4 py-3 focus:outline-none focus:ring-4 focus:ring-blue-400 transition"
               value={username}
               onChange={(e) => {
                 setUsername(e.target.value);
@@ -60,13 +66,13 @@ const Register = () => {
             />
           </div>
           <div>
-            <label htmlFor="email" className="block mb-2 font-semibold text-gray-700">
+            <label htmlFor="email" className="block mb-2 font-semibold text-gray-900">
               Email
             </label>
             <input
               type="email"
               id="email"
-              className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-4 focus:ring-blue-300 transition"
+              className="w-full border border-gray-400 rounded-lg px-4 py-3 focus:outline-none focus:ring-4 focus:ring-blue-400 transition"
               value={email}
               onChange={(e) => {
                 setEmail(e.target.value);
@@ -78,13 +84,13 @@ const Register = () => {
             />
           </div>
           <div>
-            <label htmlFor="password" className="block mb-2 font-semibold text-gray-700">
+            <label htmlFor="password" className="block mb-2 font-semibold text-gray-900">
               Password
             </label>
             <input
               type="password"
               id="password"
-              className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-4 focus:ring-blue-300 transition"
+              className="w-full border border-gray-400 rounded-lg px-4 py-3 focus:outline-none focus:ring-4 focus:ring-blue-400 transition"
               value={password}
               onChange={(e) => {
                 setPassword(e.target.value);
@@ -97,14 +103,14 @@ const Register = () => {
           </div>
           <button
             type="submit"
-            className="w-full bg-blue-700 hover:bg-blue-800 text-white py-3 rounded-xl shadow-lg transition duration-300 ease-in-out transform hover:scale-105"
+            className="w-full bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-white py-3 rounded-xl shadow-lg transition duration-300 ease-in-out transform hover:scale-105 border-2 border-pink-400 hover:border-pink-600"
           >
             Register
           </button>
         </form>
-        <p className="mt-6 text-center text-gray-700">
+        <p className="mt-6 text-center text-gray-900">
           Already have an account?{' '}
-          <Link to="/login" className="text-blue-700 font-semibold hover:underline">
+          <Link to="/login" className="text-pink-600 font-semibold hover:underline">
             Login here
           </Link>
         </p>
